@@ -23,13 +23,17 @@ pub use events::*;
 
 #[cfg(windows)]
 use winimpl = win32;
-#[cfg(unix)]
+#[cfg(target_os = "linux")]
 use winimpl = x11;
+#[cfg(target_os = "macos")]
+use winimpl = cocoa;
 
 #[cfg(windows)]
 mod win32;
-#[cfg(unix)]
+#[cfg(target_os = "linux")]
 mod x11;
+#[cfg(target_os = "macos")]
+mod cocoa;
 
 #[allow(dead_code)]
 //mod egl;
