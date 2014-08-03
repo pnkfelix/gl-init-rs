@@ -3,6 +3,7 @@
 name = "gl-init-rs"
 version = "0.0.1"
 authors = ["tomaka <pierre.krieger1708@gmail.com>"]
+build = "./cargo-build-support-libs.sh"
 
 [dev-dependencies.gl]
 path = "deps/gl"

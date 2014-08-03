@@ -82,3 +82,9 @@ impl Drop for Window {
     fn drop(&mut self) {
     }
 }
+
+
+#[link="support"]
+extern {
+
+}
