@@ -19,8 +19,12 @@ git = "https://github.com/tomaka/android-rs-glue"
 git = "https://github.com/bjz/gl-rs"
 
 [dependencies.cocoa]
-git = "https://github.com/DavidPartouche/rust-cocoa"
+# git = "https://github.com/DavidPartouche/rust-cocoa"
+git = "https://github.com/pnkfelix/rust-cocoa"
+branch = "fsk-get-msgsend.m-building"
 optional = true
 
 [dependencies.core_foundation]
-git = "https://github.com/servo/rust-core-foundation"
+# git = "https://github.com/servo/rust-core-foundation"
+git = "https://github.com/pnkfelix/rust-core-foundation"
+branch = "fsk-remove-dep-on-libdebug"
